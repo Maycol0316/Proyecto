@@ -19,7 +19,7 @@ body #form_section #form_container {
   flex-direction: column;
 }
 body #form_section #form_container h3 {
-  color: #8D5050;
+  color: #870810;
   text-align: center;
 }
 body #form_section #form_container h3 span {
@@ -55,7 +55,7 @@ body #form_section #form_container form #button {
 }
 body #form_section #contact_container {
   margin: 30px;
-  height: 450px;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -65,9 +65,81 @@ body #form_section #contact_container #social_network h2 {
   text-align: center;
   color: #002897;
 }
+body #form_section #contact_container #social_network #icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+body #form_section #contact_container #social_network #icons div {
+  float: left;
+  cursor: pointer;
+  height: 50px;
+  width: 60px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body #form_section #contact_container #social_network #icons a #facebook {
+  background-image: url("../Imagenes/fb.png");
+}
+body #form_section #contact_container #social_network #icons a #twitter {
+  background-image: url("../Imagenes/tw.png");
+}
 body #form_section #contact_container #contact h2 {
   text-align: center;
   color: #002897;
+}
+body #form_section #contact_container #contact p {
+  color: #2B4D11;
+  text-align: center;
+  font-weight: bold;
+}
+body #form_section #contact_container #contact #cities .city_container {
+  margin: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+body #form_section #contact_container #contact #cities .city_container div {
+  display: flex;
+  align-items: center;
+  height: 1.5em;
+  padding: .2em;
+}
+body #form_section #contact_container #contact #cities .city_container .whatsapp {
+  height: 1em;
+  width: 1em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../Imagenes/wp.png");
+  background-position: center;
+  justify-items: flex-end;
+}
+body #form_section #contact_container #contact #cities .city_container .city {
+  font-weight: bold;
+}
+body #form_section #contact_container #contact #cities .city_container .phone {
+  font-weight: bold;
+  color: #2B4D11;
+}
+body #form_section #contact_container #contact #cities #button_container {
+  display: flex;
+  justify-content: center;
+}
+body #form_section #contact_container #contact #cities #button_container #button_expand, body #form_section #contact_container #contact #cities #button_container #button_contract {
+  margin-top: 1em;
+  height: 1em;
+  width: 1em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+body #form_section #contact_container #contact #cities #button_container #button_expand {
+  background-image: url("../Imagenes/expandir.png");
+}
+body #form_section #contact_container #contact #cities #button_container #button_contract {
+  background-image: url("../Imagenes/contraer.png");
 }
 body #form_section #doctors_container img {
   filter: drop-shadow(0px 0px 100px #002897);
