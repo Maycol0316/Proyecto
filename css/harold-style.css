@@ -1,18 +1,9 @@
-/*#1E3E72
-#D88DBC
-#F37336
-#F7CC3B
-#5ABA4A
-#63C8F2
-
-*/
 body #form_section {
   background-color: #F1EDE4;
   font-family: 'Muli', sans-serif;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   padding: 20px 30px;
   min-height: calc(100vh - 200px);
 }
@@ -20,7 +11,6 @@ body #form_section #form_container {
   background: #DBDAC8;
   border: 2px solid #49840C;
   border-radius: 40px;
-  color: white;
   padding: 40px 60px 40px;
   min-height: 350px;
   width: 350px;
@@ -63,13 +53,23 @@ body #form_section #form_container form #button {
   height: 50px;
   letter-spacing: 1px;
 }
-body #form_section #social_media div {
+body #form_section #contact_container {
+  margin: 30px;
+  height: 450px;
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  font-size: 14px;
-  margin-bottom: 10px;
 }
-body #form_section #social_media div img {
-  width: 30px;
-  margin-right: 10px;
+body #form_section #contact_container #social_network h2 {
+  text-align: center;
+  color: #002897;
+}
+body #form_section #contact_container #contact h2 {
+  text-align: center;
+  color: #002897;
+}
+body #form_section #doctors_container img {
+  filter: drop-shadow(0px 0px 100px #002897);
+  height: 450px;
 }
