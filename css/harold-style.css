@@ -162,8 +162,12 @@ body #form_section #contact_container #contact #cities .city_container a {
 body #form_section #contact_container #contact #cities :hover {
   cursor: pointer;
 }
+body #form_section #contact_container #contact #cities :hover .city {
+  font-weight: bold;
+}
 body #form_section #contact_container #contact #cities :hover .phone {
   color: #002897;
+  font-weight: bold;
 }
 body #form_section #contact_container #contact #cities #button_container {
   display: flex;
