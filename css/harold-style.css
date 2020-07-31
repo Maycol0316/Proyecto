@@ -1,3 +1,9 @@
+*, *:before, *:after {
+  -webkit-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+}
+
 body #form_section {
   background-color: #F1EDE4;
   font-family: 'Muli', sans-serif;
@@ -7,7 +13,6 @@ body #form_section {
   padding: 20px 30px;
   min-height: calc(100vh - 200px);
 }
-
 body #form_section #form_container {
   background: #DBDAC8;
   border: 2px solid #49840C;
@@ -19,22 +24,20 @@ body #form_section #form_container {
   justify-content: space-around;
   flex-direction: column;
 }
-
 body #form_section #form_container h3 {
   color: #870810;
   text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
 }
-
 body #form_section #form_container h3 span {
   font-size: 1.4em;
 }
-
-body #form_section #form_container form {
+body #form_section #form_container #form {
   display: flex;
   flex-direction: column;
 }
-
-body #form_section #form_container form .input {
+body #form_section #form_container #form .input {
   background-color: transparent;
   border: 0px;
   border-bottom: 2px solid #49840C;
@@ -44,12 +47,10 @@ body #form_section #form_container form .input {
   outline: none;
   height: 50px;
 }
-
-body #form_section #form_container form ::placeholder {
+body #form_section #form_container #form ::placeholder {
   color: #2B4D11;
 }
-
-body #form_section #form_container form #button {
+body #form_section #form_container #form #button {
   background-color: #49840C;
   border: none;
   border-radius: 25px;
@@ -60,7 +61,6 @@ body #form_section #form_container form #button {
   height: 50px;
   letter-spacing: 1px;
 }
-
 body #form_section #contact_container {
   margin: 30px;
   height: 90%;
@@ -69,17 +69,17 @@ body #form_section #contact_container {
   justify-content: space-evenly;
   align-items: center;
 }
-
 body #form_section #contact_container #social_network h2 {
+  font-size: 1.5em;
+  font-weight: bold;
   text-align: center;
   color: #002897;
+  margin: 1em 0;
 }
-
 body #form_section #contact_container #social_network #icons {
   display: flex;
   justify-content: space-evenly;
 }
-
 body #form_section #contact_container #social_network #icons div {
   float: left;
   cursor: pointer;
@@ -89,48 +89,42 @@ body #form_section #contact_container #social_network #icons div {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 body #form_section #contact_container #social_network #icons #facebook {
   position: relative;
   background-image: url("../Imagenes/fb.png");
 }
-
 body #form_section #contact_container #social_network #icons #facebook a {
   position: absolute;
   height: 100%;
   width: 100%;
 }
-
 body #form_section #contact_container #social_network #icons #twitter {
   position: relative;
   background-image: url("../Imagenes/tw.png");
 }
-
 body #form_section #contact_container #social_network #icons #twitter a {
   position: absolute;
   height: 100%;
   width: 100%;
 }
-
 body #form_section #contact_container #social_network #icons a #facebook {
   background-image: url("../Imagenes/fb.png");
 }
-
 body #form_section #contact_container #social_network #icons a #twitter {
   background-image: url("../Imagenes/tw.png");
 }
-
 body #form_section #contact_container #contact h2 {
+  font-size: 1.5em;
+  font-weight: bold;
   text-align: center;
   color: #002897;
+  margin: 1em 0;
 }
-
 body #form_section #contact_container #contact p {
   color: #2B4D11;
   text-align: center;
   font-weight: bold;
 }
-
 body #form_section #contact_container #contact #cities .city_container {
   margin: 0 1em;
   display: flex;
@@ -138,14 +132,12 @@ body #form_section #contact_container #contact #cities .city_container {
   align-items: center;
   position: relative;
 }
-
 body #form_section #contact_container #contact #cities .city_container div {
   display: flex;
   align-items: center;
   height: 1.5em;
   padding: .2em;
 }
-
 body #form_section #contact_container #contact #cities .city_container .whatsapp {
   height: 1em;
   width: 1em;
@@ -155,37 +147,29 @@ body #form_section #contact_container #contact #cities .city_container .whatsapp
   background-position: center;
   justify-items: flex-end;
 }
-
 body #form_section #contact_container #contact #cities .city_container .city {
   font-weight: bold;
 }
-
 body #form_section #contact_container #contact #cities .city_container .phone {
   font-weight: bold;
   color: #2B4D11;
 }
-
 body #form_section #contact_container #contact #cities .city_container a {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-
 body #form_section #contact_container #contact #cities :hover {
   cursor: pointer;
 }
-
 body #form_section #contact_container #contact #cities :hover .phone {
   color: #002897;
 }
-
 body #form_section #contact_container #contact #cities #button_container {
   display: flex;
   justify-content: center;
 }
-
-body #form_section #contact_container #contact #cities #button_container #button_expand,
-body #form_section #contact_container #contact #cities #button_container #button_contract {
+body #form_section #contact_container #contact #cities #button_container #button_expand, body #form_section #contact_container #contact #cities #button_container #button_contract {
   margin-top: 1em;
   height: 1em;
   width: 1em;
@@ -194,54 +178,13 @@ body #form_section #contact_container #contact #cities #button_container #button
   background-position: center;
   cursor: pointer;
 }
-
 body #form_section #contact_container #contact #cities #button_container #button_expand {
   background-image: url("../Imagenes/expandir.png");
 }
-
 body #form_section #contact_container #contact #cities #button_container #button_contract {
   background-image: url("../Imagenes/contraer.png");
 }
-
 body #form_section #doctors_container img {
   filter: drop-shadow(0px 0px 100px #002897);
   height: 450px;
-}
-
-.estudios {
-  /*width: 99%;*/
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-color: #F1EDE4;
-}
-
-a {
-  color: rgb(17, 188, 255);
-  text-decoration: none;
-  font-size: 20px;
-  transition: background-size .3s;
-}
-
-.estudios .articulo {
-  width: 50%;
-  height: 100px;
-  padding: 5px;
-  border-top: 1px solid grey;
-  position: relative;
-  margin-left: 30em;
-  color: black;
-}
-
-.estudios .imagen {
-  display: flex;
-  align-items: center;
-  margin-right: 10em;
-  justify-items: start;
-}
-
-.aura {
-  width: 280px;
-  height: 220px;
-  margin: 0 -5px 50px 80px;
 }
