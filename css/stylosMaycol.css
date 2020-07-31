@@ -1,0 +1,41 @@
+#Encabezado {
+    display: flex;
+    flex-direction: row;
+    background-color: #caebd5;
+    width: auto;
+    height: 170px;
+}
+
+#logo img {
+    margin-left: 10px;
+    width: 140px;
+    height: auto;
+    margin-top: 5px;
+}
+#razonSocial {
+   margin-left: 20px;
+   font-size: 35px  ;
+   margin-top: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#eslogan {
+    margin-left: 170px;
+    position: absolute;
+    margin-top: 80px;
+    font-size: 20px;
+}
+
+#redes img {
+    width: 60px;
+    height: 57px;
+    margin-left: 500px;
+    margin-top: 20px;
+}
+
+#decoracion img{
+    height: 200px;
+    width: auto;
+    float: right;
+    position: relative;
+    margin-top: -180px;
+}
