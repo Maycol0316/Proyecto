@@ -237,12 +237,11 @@ a {
   display: flex;
   align-items: center;
   margin-right: 10em;
-  background-color: #DBDAC8;
   justify-items: start;
 }
 
 .aura {
   width: 280px;
   height: 220px;
-  margin: auto;
+  margin: 0 -5px 50px 80px;
 }
