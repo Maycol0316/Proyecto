@@ -3,7 +3,7 @@ const contact = document.getElementById("contact");
 var button_expand = document.getElementById("button_expand");
 var button_contract;
 const infoCities = [
-    ["Bogotá", "318 219 46 59"],
+    ["Bogotá", "315 816 35 95"],
     ["Bucaramanga", "300 577 83 17"],
     ["San Gil", "315 544 13 22"],
     ["Barrancabermeja", "318 794 53 68"],
@@ -21,7 +21,8 @@ button_expand.addEventListener("click", expand);
 function expand() {
     cities.removeChild(cities.lastElementChild);
     for (let i = 3; i < infoCities.length; i++) {
-        cities.innerHTML += '<div class="city_container"><div class="whatsapp"><a href=""></a></div><div class="city">' + infoCities[i][0] + '</div><div class="phone">' + infoCities[i][1] + '</div></div>'
+        let phone = infoCities[i][1].replace(/ /g, '');
+        cities.innerHTML += '<div class="city_container"><div class="whatsapp"></div><div class="city">' + infoCities[i][0] + '</div><div class="phone">' + infoCities[i][1] + '</div><a href="https://wa.me/57' + phone + '" target="_blank"></a></div>' 
     }
     cities.innerHTML += '<div id="button_container"><div id="button_contract"></div></div>';
     button_contract = document.getElementById("button_contract");
