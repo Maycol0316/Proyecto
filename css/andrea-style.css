@@ -1,0 +1,33 @@
+.estudios {
+  /*width: 99%;*/
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #F1EDE4;
+}
+.estudios .articulo {
+  width: 50%;
+  height: 100px;
+  padding: 5px;
+  border-top: 1px solid grey;
+  position: relative;
+  margin-left: 30em;
+  color: black;
+}
+.estudios .articulo a {
+  color: #11bcff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: background-size .3s;
+}
+.estudios .imagen {
+  display: flex;
+  align-items: center;
+  margin-right: 10em;
+  justify-items: start;
+}
+.estudios .imagen .aura {
+  width: 280px;
+  height: 220px;
+  margin: 0 -5px 50px 80px;
+}
