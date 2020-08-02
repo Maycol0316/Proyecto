@@ -192,3 +192,85 @@ body #form_section #doctors_container img {
   filter: drop-shadow(0px 0px 100px #002897);
   height: 450px;
 }
+
+@media only screen and (max-width: 1024px) {
+  #form_section {
+    flex-wrap: wrap;
+  }
+  #form_section #contact_container {
+    width: 50%;
+  }
+  #form_section #doctors_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    padding: 1em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #form_section {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  #form_section #contact_container {
+    padding: 1em;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #form_section {
+    padding: 20px !important;
+  }
+  #form_section #form_container {
+    padding: 30px !important;
+    width: 220px !important;
+  }
+  #form_section #form_container h3 {
+    font-weight: lighter !important;
+  }
+  #form_section #form_container #form .input {
+    font-size: 14px !important;
+    margin-bottom: 15px !important;
+    border-bottom: 1px solid #49840C !important;
+    height: 40px !important;
+  }
+  #form_section #form_container #form #button {
+    height: 40px !important;
+  }
+  #form_section #contact_container {
+    padding: 0px !important;
+    margin: 30px 0 !important;
+  }
+  #form_section #contact_container #social_network h2 {
+    font-weight: lighter !important;
+  }
+  #form_section #contact_container #social_network #icons div {
+    height: 40px !important;
+    width: 50px !important;
+  }
+  #form_section #contact_container #contact h2 {
+    font-weight: lighter !important;
+  }
+  #form_section #contact_container #contact #cities .city_container {
+    margin: 0;
+  }
+  #form_section #contact_container #contact #cities .city_container .whatsapp {
+    height: .9em;
+    width: .9em;
+  }
+  #form_section #contact_container #contact #cities .city_container .city {
+    font-size: .9em;
+  }
+  #form_section #contact_container #contact #cities .city_container .phone {
+    font-size: .9em;
+  }
+  #form_section #doctors_container {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 220px !important;
+  }
+  #form_section #doctors_container img {
+    height: 280px !important;
+  }
+}

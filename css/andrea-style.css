@@ -37,11 +37,12 @@
 }
 .estudios .articulo .imagen {
   width: 400px;
+  padding: 40px;
   display: flex;
   align-items: center;
 }
 .estudios .articulo .imagen .aura {
-  width: 400px;
+  width: 330px;
   border-radius: .2em;
 }
 .estudios .articulo .encabezado {
@@ -51,7 +52,7 @@
   padding: 40px;
   margin: 0 2em;
 }
-.estudios .articulo .encabezado h2 {
+.estudios .articulo .encabezado .titulo {
   color: #002897;
 }
 .estudios .articulo .encabezado p {
@@ -64,4 +65,41 @@
 .estudios .articulo .encabezado div a {
   color: #49840C;
   font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .estudios .articulo {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    border-bottom: 1px solid #2B4D11;
+    margin-bottom: 1em;
+    padding: 2em 0;
+  }
+  .estudios .articulo .imagen {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .estudios .articulo .imagen .aura {
+    width: 90%;
+  }
+  .estudios .articulo .encabezado {
+    padding: 20px;
+    margin-bottom: 0;
+  }
+  .estudios .articulo .encabezado .titulo {
+    font-size: 1.6em;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .estudios .articulo .encabezado div {
+    padding: 0;
+    border-bottom: none;
+  }
+  .estudios .articulo .encabezado div a {
+    padding-left: 1em;
+    font-size: 1em;
+  }
 }
