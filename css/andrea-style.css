@@ -1,33 +1,67 @@
 .estudios {
-  /*width: 99%;*/
+  /*width: 99%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: #F1EDE4;
+  background-color: #F1EDE4;*/
+  background: linear-gradient(#E8F1EE, #F1EDE4);
+  padding: 20px 30px;
 }
 .estudios .articulo {
-  width: 50%;
-  height: 100px;
-  padding: 5px;
-  border-top: 1px solid grey;
-  position: relative;
-  margin-left: 30em;
-  color: black;
+  display: flex;
+  /*        width: 50%;
+          height: 100px;
+          padding: 5px;
+          border-top: 1px solid grey;
+          position: relative;
+          margin-left: 30em;
+          color: black;*/
+  /*.imagen{
+      display: flex;
+      align-items: center;
+      width: 330px;
+      //margin-right: 10em;
+      justify-items: center;
+      .aura {
+          width: 280px;
+          height: 220px;
+          //margin: 0 -5px 50px 80px;
+      }
+  }
+  a{
+      color: rgb(17, 188, 255);
+      text-decoration: none;
+      font-size: 20px;
+      transition: background-size .3s;
+  }*/
 }
-.estudios .articulo a {
-  color: #11bcff;
-  text-decoration: none;
-  font-size: 20px;
-  transition: background-size .3s;
-}
-.estudios .imagen {
+.estudios .articulo .imagen {
+  width: 400px;
   display: flex;
   align-items: center;
-  margin-right: 10em;
-  justify-items: start;
 }
-.estudios .imagen .aura {
-  width: 280px;
-  height: 220px;
-  margin: 0 -5px 50px 80px;
+.estudios .articulo .imagen .aura {
+  width: 400px;
+  border-radius: .2em;
+}
+.estudios .articulo .encabezado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  margin: 0 2em;
+}
+.estudios .articulo .encabezado h2 {
+  color: #002897;
+}
+.estudios .articulo .encabezado p {
+  text-align: justify;
+}
+.estudios .articulo .encabezado div {
+  padding: 1em 0;
+  border-bottom: 1px solid #2B4D11;
+}
+.estudios .articulo .encabezado div a {
+  color: #49840C;
+  font-size: 20px;
 }
