@@ -32,6 +32,7 @@ body #form_section #form_container h3 {
 }
 body #form_section #form_container h3 span {
   font-size: 1.4em;
+  color: #dd2c00;
 }
 body #form_section #form_container #form {
   display: flex;
@@ -226,9 +227,6 @@ body #form_section #doctors_container img {
     padding: 30px !important;
     width: 220px !important;
   }
-  #form_section #form_container h3 {
-    font-weight: lighter !important;
-  }
   #form_section #form_container #form .input {
     font-size: 14px !important;
     margin-bottom: 15px !important;
@@ -242,15 +240,9 @@ body #form_section #doctors_container img {
     padding: 0px !important;
     margin: 30px 0 !important;
   }
-  #form_section #contact_container #social_network h2 {
-    font-weight: lighter !important;
-  }
   #form_section #contact_container #social_network #icons div {
     height: 40px !important;
     width: 50px !important;
-  }
-  #form_section #contact_container #contact h2 {
-    font-weight: lighter !important;
   }
   #form_section #contact_container #contact #cities .city_container {
     margin: 0;
