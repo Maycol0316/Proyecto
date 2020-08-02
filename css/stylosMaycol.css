@@ -1,7 +1,8 @@
+
 #Encabezado {
     display: flex;
     flex-direction: row;
-    background-color: #caebd5;
+    background-color: #eaf1e4;
     width: auto;
     height: 170px;
 }
@@ -12,17 +13,22 @@
     height: auto;
     margin-top: 5px;
 }
+@font-face {
+    font-family: "titulo";
+    src: local("titulo"), url("/Users/maycol/Documents/Fundamentos de programación/Proyecto/Fuentes/Signika-Bold.ttf") format("truetype");
+}
 #razonSocial {
    margin-left: 20px;
-   font-size: 35px  ;
+   font-size: 40px  ;
    margin-top: 30px;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: "titulo";
 }
 #eslogan {
     margin-left: 170px;
     position: absolute;
     margin-top: 80px;
     font-size: 20px;
+    font-family: "titulo";
 }
 
 #redes img {
@@ -39,3 +45,104 @@
     position: relative;
     margin-top: -180px;
 }
+
+nav {
+    margin: 0px;
+    margin-top: -50px;
+    margin-left: 190px;
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background-color: #e6f0df;
+	border-radius: 8px;
+    font-size: 0;
+    
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: black;
+    cursor: pointer;
+    
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #a7ec9a;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #a7ec9a;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #a7ec9a;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #a7ec9a;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+	background-color: #a7ec9a;
+}
+
+
+span {
+    color: #2BD6B4;
+}
+
+@font-face {
+    font-family: "buena";
+    src: local("buena"), url("/Users/maycol/Documents/Fundamentos de programación/Proyecto/Fuentes/Fibel Vienna.ttf") format("truetype");
+}
+
+
+#tituloPrincipal {
+    margin-left: 200px; 
+    font-family: "buena", Black; 
+    font-weight: bold; font-size: 40px; 
+    background: #13c42b; 
+    -webkit-background-clip: text; 
+    -moz-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+    letter-spacing: 4px;
+    width: 1100px;
+    text-align: center;
+    }
