@@ -22,7 +22,7 @@ body {
 }
 #razonSocial {
    margin-left: 20px;
-   font-size: 40px  ;
+   font-size: 40px ;
    margin-top: 30px;
    font-family: "titulo";
 }
@@ -32,6 +32,9 @@ body {
     margin-top: 80px;
     font-size: 20px;
     font-family: "titulo";
+}
+#eslogan span{
+    color: black;
 }
 
 #redes img {
@@ -136,7 +139,7 @@ span {
 
 
 #tituloPrincipal {
-    margin-left: 200px; 
+    margin-left: 180px; 
     font-family: "buena", Black; 
     font-weight: bold; font-size: 40px; 
     background: #13c42b; 
@@ -148,4 +151,291 @@ span {
     letter-spacing: 4px;
     width: 1100px;
     text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        #logo img {
+            margin-left: 5px;
+            width: 70px;
+            height: auto;
+            margin-top: 1px;
+        }
+        #decoracion img{
+            height: 110px;
+            width: auto;
+            float: right;
+            position: relative;
+            margin-top: -100px;
+            margin-left: 310px;
+        }
+        @font-face {
+            font-family: "titulo";
+            src: local("titulo"), url("/Users/maycol/Documents/Fundamentos de programación/Proyecto/Fuentes/Signika-Bold.ttf") format("truetype");
+        }
+        #razonSocial {
+           margin-left: 15px;
+           font-size: 23px  ;
+           margin-top: 10px;
+           font-family: "titulo";
+        }
+        #eslogan {
+            margin-left: 90px;
+            position: absolute;
+            margin-top: 40px;
+            font-size: 11px;
+            font-family: "titulo";
+        }
+
+        #redes img {
+            display: flex;
+            width: 30px;
+            height: 29px;
+            margin-left: 280px;
+            margin-top: 10px;
+        }
+      
+        #Encabezado {
+            background-color: #eaf1e4;
+            width: auto;
+            height: 95px;
+        }
+        nav {
+            margin: 0px;
+            margin-top: -38px;
+            margin-left: 80px;
+            position: relative;
+            width: 400px;
+            height: 10px;
+            background-color: #e6f0df;
+            border-radius: 8px;
+            font-size: 0;
+            
+        }
+        nav a {
+            line-height: 50px;
+            height: 100%;
+            font-size: 8px;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            color: black;
+            cursor: pointer;
+            
+        }
+        nav .animation {
+            position: absolute;
+            height: 100%;
+            top: 20px;
+            z-index: 0;
+            transition: all .5s ease 0s;
+            border-radius: 4px;
+        }
+        a:nth-child(1) {
+            width: 50px;
+        }
+        a:nth-child(2) {
+            width: 80px;
+        }
+        a:nth-child(3) {
+            width: 50px;
+        }
+        a:nth-child(4) {
+            width: 80px;
+        }
+        a:nth-child(5) {
+            width: 60px;
+        }
+        nav .start-home, a:nth-child(1):hover~.animation {
+            width: 50px;
+            left: 0;
+            background-color: #a7ec9a;
+        }
+        nav .start-about, a:nth-child(2):hover~.animation {
+            width: 55px;
+            left: 50px;
+            background-color: #a7ec9a;
+        }
+        nav .start-blog, a:nth-child(3):hover~.animation {
+            width: 50px;
+            left: 105px;
+            background-color: #a7ec9a;
+        }
+        nav .start-portefolio, a:nth-child(4):hover~.animation {
+            width: 80px;
+            left: 155px;
+            background-color: #a7ec9a;
+        }
+        nav .start-contact, a:nth-child(5):hover~.animation {
+            width: 60px;
+            left: 235px;
+            background-color: #a7ec9a;
+        }
+        
+        span {
+            color: #2BD6B4;
+        }
+        
+        @font-face {
+            font-family: "buena";
+            src: local("buena"), url("/Users/maycol/Documents/Fundamentos de programación/Proyecto/Fuentes/Fibel Vienna.ttf") format("truetype");
+        }
+      
+        #tituloPrincipal {
+            
+            display: flex;
+            float: left; 
+            font-family: "buena", Black; 
+            font-weight: bold; font-size: 20px; 
+            background: #13c42b; 
+            -webkit-background-clip: text; 
+            -moz-background-clip: text; 
+            letter-spacing: 2px;
+            margin-top: -4px;
+            }
+
+    }
+
+    @media (max-width: 425px) {
+        #logo img {
+            margin-left: 5px;
+            width: 50px;
+            height: auto;
+            margin-top: 1px;
+        }
+        #decoracion img{
+            height: 70px;
+            width: auto;
+            float: right;
+            position: relative;
+            margin-top: -100px;
+            margin-left: 310px;
+        }
+        @font-face {
+            font-family: "titulo";
+            src: local("titulo"), url("/Users/maycol/Documents/Fundamentos de programación/Proyecto/Fuentes/Signika-Bold.ttf") format("truetype");
+        }
+        #razonSocial {
+           margin-left: 15px;
+           font-size: 23px  ;
+           margin-top: 10px;
+           font-family: "titulo";
+        }
+        #eslogan {
+            margin-left: 70px;
+            position: absolute;
+            margin-top: 40px;
+            font-size: 11px;
+            font-family: "titulo";
+        }
+
+        #eslogan span {
+        display: block;
+        }
+        #redes img {
+            display: flex;
+            width: 20px;
+            height: 19px;
+            margin-left: 80px;
+            margin-top: 10px;
+        }
+        nav {
+            margin: 8px;
+            margin-top: -36px;
+            margin-left: 30px;
+            position: relative;
+            width: 320px;
+            height: 0px;
+            background-color: #e6f0df;
+            border-radius: 8px;
+            font-size: 0;
+            
+        }
+        nav a {
+            line-height: 50px;
+            height: 100%;
+            font-size: 8px;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            color: black;
+            cursor: pointer;
+            
+        }
+        nav .animation {
+            position: absolute;
+            height: 100%;
+            top: 20px;
+            z-index: 0;
+            transition: all .5s ease 0s;
+            border-radius: 4px;
+        }
+        a:nth-child(1) {
+            width: 50px;
+        }
+        a:nth-child(2) {
+            width: 80px;
+        }
+        a:nth-child(3) {
+            width: 50px;
+        }
+        a:nth-child(4) {
+            width: 80px;
+        }
+        a:nth-child(5) {
+            width: 60px;
+        }
+        nav .start-home, a:nth-child(1):hover~.animation {
+            width: 50px;
+            left: 0;
+            background-color: #a7ec9a;
+        }
+        nav .start-about, a:nth-child(2):hover~.animation {
+            width: 55px;
+            left: 50px;
+            background-color: #a7ec9a;
+        }
+        nav .start-blog, a:nth-child(3):hover~.animation {
+            width: 50px;
+            left: 105px;
+            background-color: #a7ec9a;
+        }
+        nav .start-portefolio, a:nth-child(4):hover~.animation {
+            width: 80px;
+            left: 155px;
+            background-color: #a7ec9a;
+        }
+        nav .start-contact, a:nth-child(5):hover~.animation {
+            width: 60px;
+            left: 235px;
+            background-color: #a7ec9a;
+        }
+        
+        span {
+            color: #2BD6B4;
+        }
+
+        @font-face {
+            font-family: "buena";
+            src: local("buena"), url("/Users/maycol/Documents/Fundamentos de programación/Proyecto/Fuentes/Fibel Vienna.ttf") format("truetype");
+        }
+      
+        #tituloPrincipal {
+            
+            display: flex;
+            float: left; 
+            font-family: "buena", Black; 
+            font-weight: bold; font-size: 15px; 
+            background: #13c42b; 
+            -webkit-background-clip: text; 
+            -moz-background-clip: text; 
+            letter-spacing: 2px;
+            margin-top: 4px;
+            margin-left: 40px;
+            }
     }
