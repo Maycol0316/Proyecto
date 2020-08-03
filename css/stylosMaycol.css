@@ -151,7 +151,6 @@ span {
     width: 100%;
     display: flex;
     justify-content: center;
-margin-top: -1px;
     }
 
     @media (max-width: 768px) {
