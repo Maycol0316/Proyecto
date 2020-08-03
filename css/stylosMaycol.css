@@ -429,7 +429,7 @@ span {
             display: flex;
             justify-content: center; 
             font-family: "buena", Black; 
-            font-weight: bold; font-size: 15px; 
+            font-weight: bold; font-size: 10px; 
             background: #13c42b; 
             -webkit-background-clip: text; 
             -moz-background-clip: text; 
