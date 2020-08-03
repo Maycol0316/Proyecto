@@ -4,8 +4,25 @@
   box-sizing: content-box !important;
 }
 
+body {
+  /*   
+      <section id="banner_section">
+          <img src="Imagenes/Banner interferon.png" alt="" srcset="">
+      </section>
+       #banner_section{
+          display: flex;
+          justify-content: center;
+          background: $blue;
+          padding: 20px;
+          img{
+              width: 50%;
+          }
+  
+      }
+  */
+}
 body #form_section {
-  background: linear-gradient(#F1EDE4, #E8F1EE);
+  background: linear-gradient(#E8F1EE, #F1EDE4);
   font-family: 'Muli', sans-serif;
   display: flex;
   align-items: center;
