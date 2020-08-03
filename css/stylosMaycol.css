@@ -135,8 +135,7 @@ span {
 }
 
 
-#tituloPrincipal {
-    margin-left: 180px; 
+#tituloPrincipal { 
     font-family: "buena", Black; 
     font-weight: bold; font-size: 40px; 
     background: #13c42b; 
@@ -147,7 +146,8 @@ span {
     text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
     letter-spacing: 4px;
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     }
 
     @media (max-width: 768px) {
@@ -422,10 +422,9 @@ span {
             src: local("buena"), url("/Users/maycol/Documents/Fundamentos de programación/Proyecto/Fuentes/Fibel Vienna.ttf") format("truetype");
         }
       
-        #tituloPrincipal {
-            
+        #tituloPrincipal { 
             display: flex;
-            float: left; 
+            justify-content: center; 
             font-family: "buena", Black; 
             font-weight: bold; font-size: 15px; 
             background: #13c42b; 
@@ -433,6 +432,5 @@ span {
             -moz-background-clip: text; 
             letter-spacing: 2px;
             margin-top: 4px;
-            margin-left: 40px;
             }
     }
